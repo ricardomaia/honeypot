@@ -27,7 +27,7 @@ def handleConnection(conn, addr, socketAddress, socketPort):
     remotePort = getRemotePort(addr)
     
     sendMessage(conn, "Connection received\r\n")
-    sendMessage(conn, "220 mail.gdfnet.df.gov.br ESMTP\r\n") 
+    sendMessage(conn, "220 mail.example.com ESMTP\r\n") 
     
     log.info("dst_port=" + str(socketPort) + " dst_ip=" + str(socketAddress) + " src_port=" + remotePort + " src_ip=" + remoteAddr + " action=\"open\"")
     
